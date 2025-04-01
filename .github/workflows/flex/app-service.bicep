@@ -52,8 +52,7 @@ resource appService 'Microsoft.Web/sites@2021-03-01' = {
 }
 
 resource stagingSlot 'Microsoft.Web/sites/slots@2022-03-01' = {
-  name: 'reeagccorleans-stg'
-  parent:  appservice
+  name: 'reeagccorleans/stg'
   location: location
   properties: {
     serverFarmId: appServicePlan.id
