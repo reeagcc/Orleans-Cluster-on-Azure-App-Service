@@ -6,7 +6,7 @@ on:
     - main
 
 env:
-  UNIQUE_APP_NAME: reeagccorleans
+  UNIQUE_APP_NAME: reeagccorleans2
   AZURE_RESOURCE_GROUP_NAME: az104-rg9
   AZURE_RESOURCE_GROUP_LOCATION: spaincentral
 
