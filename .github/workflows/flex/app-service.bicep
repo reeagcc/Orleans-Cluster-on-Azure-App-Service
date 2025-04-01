@@ -83,6 +83,7 @@ resource stagingSlot 'Microsoft.Web/sites/slots@2022-03-01' = {
       alwaysOn: true
     }
   }
+  parent: appService
   dependsOn: [
   appService
   ]
