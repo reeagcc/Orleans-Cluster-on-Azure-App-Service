@@ -56,9 +56,6 @@ resource stagingSlot 'Microsoft.Web/sites/slots@2022-03-01' = {
   location: location
   properties: {
     serverFarmId: appServicePlan.id
-    dependsOn: [
-    appService
-    ]
     virtualNetworkSubnetId: stagingSubnetId
     siteConfig: {
       http20Enabled: true
@@ -86,6 +83,9 @@ resource stagingSlot 'Microsoft.Web/sites/slots@2022-03-01' = {
       alwaysOn: true
     }
   }
+  dependsOn: [
+  appService
+  ]
 }
 
 resource slotConfig 'Microsoft.Web/sites/config@2021-03-01' = {
